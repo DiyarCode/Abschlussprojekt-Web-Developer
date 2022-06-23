@@ -12,7 +12,7 @@ function Forecast({ title, items }) {
         <p className="text-white font-medium uppercase">{title}</p>
       </div>
 
-      <MediaForecast className="flex flex-row items-center justify-between text-white shadow-2xl rounded-lg p-3 my-7 ">
+      <MediaForecast className="flex flex-row items-center justify-between text-white shadow-2xl rounded-lg p-3 mt-2 ">
         {items.map((item) => (
           <div className="Card flex flex-col items-center justify-center mb-4">
             <p className="font-light text-sm">{item.title}</p>
@@ -32,7 +32,7 @@ function Forecast({ title, items }) {
 const MediaForecast = styled.div`
   @media only screen and ${breakpoint.device.m} {
     margin: 4px, 4px;
-    padding: auto;
+    padding: 0px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;

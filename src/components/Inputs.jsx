@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
+import styled from "styled-components";
+import breakpoint from "./breakpoint";
 
 function Inputs({ setQuery, units, setUnits }) {
   const [city, setCity] = useState("");
@@ -28,7 +30,7 @@ function Inputs({ setQuery, units, setUnits }) {
   };
 
   return (
-    <div className="flex flex-row justify-center my-6 px-4">
+    <InputMedia className="Input flex flex-row justify-center my-6 px-4">
       <div className="flex flex-row items-center justify-center p-3 m-2">
         <input
           value={city}
@@ -66,8 +68,21 @@ function Inputs({ setQuery, units, setUnits }) {
           °F
         </button>
       </div>
-    </div>
+    </InputMedia>
   );
 }
+
+const InputMedia = styled.div`
+  @media only screen and ${breakpoint.device.s} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+`;
 
 export default Inputs;

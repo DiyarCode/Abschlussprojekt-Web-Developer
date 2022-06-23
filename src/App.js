@@ -1,6 +1,5 @@
 import "./App.css";
 import UilReact from "@iconscout/react-unicons/icons/uil-react";
-
 import Inputs from "./components/Inputs";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TemperatureAndDetails from "./components/TemperatureAndDetails";
@@ -24,7 +23,7 @@ function App() {
   }, [query, units]);
 
   return (
-    <div className="py-5 px-40 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 from-cyan-700 to-blue-700 min-h-screen">
+    <div className="py-5 px-40 bg-gradient-to-br  shadow-xl shadow-gray-400 from-cyan-700 to-blue-700 h-fit min-h-screen  min-w-full">
       <h1 className="flex items-center justify-center text-white font-Montserrat text-3xl font-medium pb-10">
         MyWeatherApp
       </h1>

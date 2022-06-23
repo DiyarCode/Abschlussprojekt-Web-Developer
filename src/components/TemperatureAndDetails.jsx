@@ -56,7 +56,7 @@ function TemperatureAndDetails({
         </div>
       </MediaTemperatureAndDetails1>
 
-      <MediaTemperatureAndDetails2 className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-7">
+      <MediaTemperatureAndDetails2 className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-16">
         <UilSun />
         <p className="font-light">
           Rise:{" "}
