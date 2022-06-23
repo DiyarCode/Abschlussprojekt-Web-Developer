@@ -31,8 +31,8 @@ function Forecast({ title, items }) {
 
 const MediaForecast = styled.div`
   @media only screen and ${breakpoint.device.m} {
-    margin: 4px, 4px;
     padding: 0px;
+    margin: 0px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -41,7 +41,7 @@ const MediaForecast = styled.div`
     border-radius: 5px;
 
     .Card {
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 `;
