@@ -30,8 +30,8 @@ function Inputs({ setQuery, units, setUnits }) {
   };
 
   return (
-    <InputMedia className="Input flex flex-row justify-center my-6 px-4">
-      <div className="flex flex-row items-center justify-center p-3 m-2">
+    <InputMedia className=" flex flex-col justify-center items-center my-6 px-4">
+      <div className="Input flex flex-row items-center justify-center p-3 m-2">
         <input
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
@@ -51,7 +51,7 @@ function Inputs({ setQuery, units, setUnits }) {
         />
       </div>
 
-      <div className="flex flex-row w-1/4 items-center justify-center">
+      <div className="flex flex-row items-center justify-center">
         <button
           name="metric"
           className="text-xl text-white font-light transition ease-out hover:scale-125"
@@ -76,11 +76,9 @@ const InputMedia = styled.div`
   @media only screen and ${breakpoint.device.s} {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     input {
-      padding-left: 2px;
-      padding-right: 2px;
+      width: 18rem;
     }
   }
 `;
