@@ -23,7 +23,7 @@ function App() {
   }, [query, units]);
 
   return (
-    <div className="py-5 px-40 bg-gradient-to-br  shadow-xl shadow-gray-400 from-cyan-700 to-blue-700 h-fit min-h-screen  min-w-full">
+    <div className="py-5 px-10 md:px-20 lg:px-40 bg-gradient-to-br  shadow-xl shadow-gray-400 from-cyan-700 to-blue-700 h-fit min-h-screen  min-w-full">
       <h1 className="flex items-center justify-center text-cyan-100 font-Montserrat text-4xl font-medium pb-10">
         MyWeatherApp
       </h1>
